@@ -284,6 +284,7 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 # 依然存在的问题
 * 本文都是使用的js开发，其实现在很多项目都已经使用了`typescript`，如果需要更改成ts项目，还是需要修改一些配置。
-* 虽然实现了热更新，但是只要开发稍微复杂一点组件就会发现，虽然页面保留了下来，但是组件内部的的状态却没有保留下来，要实现这一点，就虚啊哟用到`react-hot-loader`， 具体使用方式可以参考该[文档](https://github.com/gaearon/react-hot-loader)。
+* 该项目没有实现服务端渲染，如果要完成，就需要自己写服务端代码。
+* 虽然实现了热更新，但是只要开发稍微复杂一点组件就会发现，虽然页面保留了下来，但是组件内部的的状态却没有保留下来，要实现这一点，就需要用到`react-hot-loader`， 具体使用方式可以参考该[文档](https://github.com/gaearon/react-hot-loader)。
 * 本文没有设计css、图片等文件，这些文件都可以使用webpack的loader功能加载进来。
 
